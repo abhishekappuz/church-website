@@ -770,13 +770,13 @@ let state = null;
 /* ---------- SUPABASE (visitor photo submissions) ---------- */
 // 1) Create a free project at supabase.com
 // 2) Paste your Project URL and anon public key below (Project Settings > API)
-const SUPABASE_URL = 'YOUR_SUPABASE_PROJECT_URL';      // e.g. https://abcxyz.supabase.co
-const SUPABASE_ANON_KEY = 'YOUR_SUPABASE_ANON_KEY';    // the "anon public" key, NOT the service_role key
+const SUPABASE_URL = 'https://gkpqcctcnvhvqzfsvueb.supabase.co';      // e.g. https://abcxyz.supabase.co
+const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImdrcHFjY3RjbnZodnF6ZnN2dWViIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODcwODEzODMsImV4cCI6MjEwMjY1NzM4M30.bV_yUg74fC4YEZbLZL1vsPFy-uP0JRVDM9Q3B9sm06c';    // the "anon public" key, NOT the service_role key
 const SUPABASE_BUCKET = 'gallery-uploads';
 const SUPABASE_AUDIO_BUCKET = 'site-audio';
 let sb = null;
 try{
-  if(SUPABASE_URL !== 'YOUR_SUPABASE_PROJECT_URL' && window.supabase){
+  if(SUPABASE_URL !== 'https://gkpqcctcnvhvqzfsvueb.supabase.co' && window.supabase){
     sb = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
   }
 }catch(e){ console.error('Supabase init failed', e); }
