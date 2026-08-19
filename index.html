@@ -776,7 +776,7 @@ const SUPABASE_BUCKET = 'gallery-uploads';
 const SUPABASE_AUDIO_BUCKET = 'site-audio';
 let sb = null;
 try{
-  if(SUPABASE_URL !== 'https://gkpqcctcnvhvqzfsvueb.supabase.co' && window.supabase){
+  if(SUPABASE_URL !== 'YOUR_SUPABASE_PROJECT_URL' && window.supabase){
     sb = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
   }
 }catch(e){ console.error('Supabase init failed', e); }
